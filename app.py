@@ -96,8 +96,6 @@ if(st.button("SUBMIT")):
             fig = go.Figure()
             fig.add_trace(go.Scatter(x=dates, y=mintemp, name='Minimum '))
             fig.add_trace(go.Scatter(x=dates, y=maxtemp, name='Maximum ', marker_color='crimson'))
-            # CHANGE MARKER COLORS AND DELETE THIS COMMENT OOOO
-            # OOOOOOOOOOHHHH
             fig.update_layout(xaxis_title="Dates", yaxis_title="Temperature", font=dict(color="white"))
             st.plotly_chart(fig)
 
